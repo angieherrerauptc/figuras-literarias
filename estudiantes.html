@@ -4,28 +4,53 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Zona Estudiantes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="css/estudiantes.css" />
 </head>
+
 <body>
 
-  <a href="index.html" class="btn-volver">Volver</a>
+  <audio id="musicaFondo" src="musica-fondo.mp3" loop></audio>
+
+  <button class="btn-musica" id="btnMusica" type="button" aria-label="Activar música">
+    <i class="fa-solid fa-volume-high"></i>
+  </button>
+
+  <a href="index.html" class="btn-volver">
+    <i class="fa-solid fa-arrow-left"></i>
+    Volver
+  </a>
 
   <main class="zona-estudiantes">
+
     <section class="hero-estudiantes">
-      <span class="etiqueta">Aprende a tu ritmo</span>
+      <span class="etiqueta">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Aprende jugando
+      </span>
+
       <h1>Zona Estudiantes</h1>
+
       <p>
-        Explora recursos, actividades, juegos y materiales diseñados para aprender
-        figuras literarias de forma divertida, visual e inclusiva.
+        Entra a esta aventura literaria, descubre recursos, completa retos,
+        juega y aprende figuras literarias a tu propio ritmo.
       </p>
     </section>
 
     <section class="grid-estudiantes">
 
-      <article class="card estudiante-card card-guia">
-        <div class="icono">📚</div>
-        <h2>Guía Pedagógica</h2>
-        <p>Material de apoyo para comprender mejor los temas.</p>
+      <article class="estudiante-card card-guia">
+        <div class="icono">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+
+        <h2>¡A aprender!</h2>
+        <p>Explora materiales sencillos para entender mejor cada tema.</p>
 
         <div class="botones">
           <a href="#" class="btn-card">Minilibro</a>
@@ -34,10 +59,13 @@
         </div>
       </article>
 
-      <article class="card estudiante-card card-inclusiva">
-        <div class="icono">🧩</div>
-        <h2>Estrategias Inclusivas</h2>
-        <p>Herramientas visuales y accesibles para aprender mejor.</p>
+      <article class="estudiante-card card-inclusiva">
+        <div class="icono">
+          <i class="fa-solid fa-brain"></i>
+        </div>
+
+        <h2>Superpoderes Visuales</h2>
+        <p>Usa apoyos visuales para aprender de forma clara y divertida.</p>
 
         <div class="botones">
           <a href="#" class="btn-card">Organizador Visual</a>
@@ -46,10 +74,13 @@
         </div>
       </article>
 
-      <article class="card estudiante-card card-actividades">
-        <div class="icono">✏️</div>
-        <h2>Actividades</h2>
-        <p>Ejercicios prácticos para reforzar lo aprendido.</p>
+      <article class="estudiante-card card-actividades">
+        <div class="icono">
+          <i class="fa-solid fa-pencil"></i>
+        </div>
+
+        <h2>¡Manos a la obra!</h2>
+        <p>Practica con actividades para convertirte en experto literario.</p>
 
         <div class="botones">
           <a href="#" class="btn-card">Comprensión Lectora</a>
@@ -58,10 +89,13 @@
         </div>
       </article>
 
-      <article class="card estudiante-card card-juegos">
-        <div class="icono">🎮</div>
-        <h2>Juegos</h2>
-        <p>Actividades dinámicas para aprender jugando.</p>
+      <article class="estudiante-card card-juegos">
+        <div class="icono">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+
+        <h2>¡Zona de Juego!</h2>
+        <p>Aprende jugando con retos interactivos y actividades dinámicas.</p>
 
         <div class="botones">
           <a href="#" class="btn-card">Juegos Interactivos</a>
@@ -69,68 +103,99 @@
         </div>
       </article>
 
-      <article class="card estudiante-card card-evaluacion">
-        <div class="icono">⭐</div>
-        <h2>Evaluación</h2>
-        <p>Próximamente encontrarás evaluaciones dinámicas para reforzar tu aprendizaje.</p>
+      <article class="estudiante-card card-evaluacion">
+        <div class="icono">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+
+        <h2>¡Desafío Final!</h2>
+        <p>Muy pronto tendrás retos para demostrar todo lo que aprendiste.</p>
 
         <div class="estado-proximo">Próximamente</div>
       </article>
 
     </section>
   </main>
-<footer class="footer-estudiantes">
-  <div class="footer-contenido">
 
-    <div class="footer-bloque footer-marca">
-      <h3>Fábrica de Figuras Literarias</h3>
-      <p>
-        Zona estudiantil diseñada para aprender figuras literarias mediante
-        guías, actividades, juegos y recursos dinámicos.
-      </p>
+  <footer class="footer-estudiantes">
+    <div class="footer-contenido">
+
+      <div class="footer-bloque footer-marca">
+        <div class="footer-logo">
+          <i class="fa-solid fa-shapes"></i>
+        </div>
+
+        <h3>Fábrica de Figuras Literarias</h3>
+
+        <p>
+          Zona estudiantil creada para aprender figuras literarias con recursos
+          visuales, juegos, actividades y retos educativos.
+        </p>
+      </div>
+
+      <div class="footer-bloque">
+        <h4>Recorrido</h4>
+        <a href="index.html#inicio">Introducción y objetivos</a>
+        <a href="index.html#secuencia">Secuencia didáctica</a>
+        <a href="index.html#gamificacion">Gamificación</a>
+        <a href="index.html#beneficios">Beneficios</a>
+        <a href="index.html#evaluacion">Evaluación</a>
+      </div>
+
+      <div class="footer-bloque">
+        <h4>Zonas</h4>
+        <a href="docentes.html">Docentes</a>
+        <a href="estudiantes.html">Estudiantes</a>
+        <a href="neurodivergentes.html">Estudiantes neurodivergentes</a>
+      </div>
+
+      <div class="footer-bloque">
+        <h4>Zona Estudiantes</h4>
+        <a href="#">¡A aprender!</a>
+        <a href="#">Superpoderes Visuales</a>
+        <a href="#">¡Manos a la obra!</a>
+        <a href="#">¡Zona de Juego!</a>
+        <a href="#">¡Desafío Final!</a>
+      </div>
+
+      <div class="footer-bloque">
+        <h4>Autoría</h4>
+        <p>Creado por</p>
+        <strong>Angie Herrera</strong>
+        <p>Proyecto académico educativo</p>
+        <p>Año: 2026</p>
+      </div>
+
     </div>
 
-    <div class="footer-bloque">
-      <h4>Recorrido</h4>
-      <a href="index.html#inicio">Introducción y objetivos</a>
-      <a href="index.html#secuencia">Secuencia didáctica</a>
-      <a href="index.html#gamificacion">Gamificación</a>
-      <a href="index.html#beneficios">Beneficios</a>
-      <a href="index.html#evaluacion">Evaluación</a>
+    <div class="footer-linea"></div>
+
+    <div class="footer-final">
+      <p>© 2026 Fábrica de Figuras Literarias</p>
+      <p>“Cada estudiante aprende a su ritmo.”</p>
     </div>
+  </footer>
 
-    <div class="footer-bloque">
-      <h4>Zonas</h4>
-      <a href="docentes.html">Docentes</a>
-      <a href="estudiantes.html">Estudiantes</a>
-      <a href="neurodivergentes.html">Estudiantes neurodivergentes</a>
-    </div>
+  <script>
+    const musica = document.getElementById("musicaFondo");
+    const btnMusica = document.getElementById("btnMusica");
 
-    <div class="footer-bloque">
-      <h4>Zona Estudiantes</h4>
-      <a href="#">Guía Pedagógica</a>
-      <a href="#">Estrategias Inclusivas</a>
-      <a href="#">Actividades</a>
-      <a href="#">Juegos</a>
-      <a href="#">Evaluación</a>
-    </div>
+    let reproduciendo = false;
 
-    <div class="footer-bloque">
-      <h4>Autoría</h4>
-      <p>Creado por</p>
-      <strong>Angie Herrera</strong>
-      <p>Proyecto académico educativo</p>
-      <p>Año: 2026</p>
-    </div>
+    btnMusica.addEventListener("click", () => {
+      if (!reproduciendo) {
+        musica.play();
+        btnMusica.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        btnMusica.setAttribute("aria-label", "Pausar música");
+        reproduciendo = true;
+      } else {
+        musica.pause();
+        btnMusica.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        btnMusica.setAttribute("aria-label", "Activar música");
+        reproduciendo = false;
+      }
+    });
+  </script>
 
-  </div>
-
-  <div class="footer-linea"></div>
-
-  <div class="footer-final">
-    <p>© 2026 Fábrica de Figuras Literarias</p>
-    <p>“Cada estudiante aprende a su ritmo.”</p>
-  </div>
-</footer>
 </body>
 </html>
