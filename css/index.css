@@ -304,14 +304,14 @@ main {
 }
 
 .main-objective h3 {
-    color: #ffffff;
+    color: #ffffff !important;
     font-size: 1.7rem;
     font-weight: 800;
     margin-bottom: 20px;
 }
 
 .main-objective p {
-    color: rgba(255,255,255,0.92);
+    color: rgba(255,255,255,0.92)!important;
     font-size: 1.1rem;
     line-height: 1.9;
 }
@@ -611,7 +611,7 @@ main {
     margin: auto;
 
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
     gap: 48px;
 }
 
