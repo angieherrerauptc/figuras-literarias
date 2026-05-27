@@ -19,7 +19,11 @@
   --blanco: #ffffff;
   --footer: #0d1210;
 }
-
+*,
+*::before,
+*::after {
+    cursor: url("../img/cursor/click.png")4 4, auto !important; 
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +44,6 @@ body {
     radial-gradient(circle at 90% 18%, #9ef2ff 0 9%, transparent 10%),
     radial-gradient(circle at 12% 82%, #ffc1df 0 10%, transparent 11%),
     linear-gradient(135deg, #fff5fb, #f2efff 55%, #ecfbff);
-  cursor: url("../img/cursor/sword.png"), auto;
 }
 
 body::before {
@@ -546,4 +549,24 @@ body::after {
   .footer-contenido {
     grid-template-columns: 1fr;
   }
+}
+
+.btn-musica.playing {
+  animation: pulseMusic 1.5s infinite;
+}
+
+@keyframes pulseMusic {
+
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+
 }
