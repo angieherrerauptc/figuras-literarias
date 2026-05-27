@@ -9,7 +9,7 @@
     --text-soft: #5f6b7a;
     --title: #1f2937;
 
-    --accent: #1f5f5b;
+    --accent: #2d6a67;
     --accent-dark: #164844;
     --accent-soft: #e6f1ef;
 
@@ -282,8 +282,8 @@ main {
 
 .intro-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
 .intro-card {
@@ -295,14 +295,25 @@ main {
 }
 
 .main-objective {
-    grid-row: span 2;
     background: var(--accent);
     color: white;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.main-objective h3,
+.main-objective h3 {
+    color: #ffffff;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
 .main-objective p {
-    color: white;
+    color: rgba(255,255,255,0.92);
+    font-size: 1.1rem;
+    line-height: 1.9;
 }
 
 .intro-card h3 {
