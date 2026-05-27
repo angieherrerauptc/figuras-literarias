@@ -98,7 +98,7 @@ body {
 .recursos-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  gap: 28px;
 }
 
 .recurso-card {
@@ -321,4 +321,57 @@ body {
 .lista-recursos a:hover {
   background: #a94774;
   transform: translateY(-3px);
+}
+/* ICONOS TITULOS */
+
+.recurso-card h3 i {
+    margin-right: 8px;
+    color: #b94f82;
+}
+
+/* CONTADOR */
+
+.contador {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    padding: 6px 12px;
+
+    border-radius: 999px;
+
+    background: #f7e5ef;
+
+    color: #b94f82;
+
+    font-size: 0.78rem;
+
+    font-weight: 700;
+}
+
+/* ICONOS ARCHIVOS */
+
+.lista-recursos i {
+    margin-right: 8px;
+    width: 18px;
+}
+
+/* PDF */
+
+.lista-recursos a.pdf {
+    background: #c5588a;
+}
+
+.lista-recursos a.pdf:hover {
+    background: #b14c7b;
+}
+
+/* ZIP */
+
+.lista-recursos a.zip {
+    background: #327b78;
+}
+
+.lista-recursos a.zip:hover {
+    background: #276663;
 }
