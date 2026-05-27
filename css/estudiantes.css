@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:
+    radial-gradient(circle at top left, #ffe3f0 0%, transparent 35%),
+    radial-gradient(circle at bottom right, #d9f7ff 0%, transparent 35%),
+    linear-gradient(135deg, #fff5fa, #f6f0ff);
+  color: #363145;
+  padding: 28px;
+}
+
+.btn-volver {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  text-decoration: none;
+  background: #ffffffcc;
+  color: #c45183;
+  padding: 13px 24px;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 10px 25px rgba(196, 81, 131, 0.16);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.btn-volver:hover {
+  transform: translateY(-3px);
+  background: #c45183;
+  color: #ffffff;
+}
+
+.zona-estudiantes {
+  width: min(1180px, 100%);
+  margin: 42px auto;
+  background: rgba(255, 255, 255, 0.82);
+  border-radius: 34px;
+  padding: 58px;
+  box-shadow: 0 24px 70px rgba(85, 64, 115, 0.13);
+  overflow: hidden;
+  position: relative;
+}
+
+.zona-estudiantes::before {
+  content: "";
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  background: #ffd166;
+  border-radius: 50%;
+  top: -95px;
+  right: -80px;
+  opacity: 0.22;
+}
+
+.zona-estudiantes::after {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: #7bdff2;
+  border-radius: 50%;
+  bottom: -80px;
+  left: -60px;
+  opacity: 0.25;
+}
+
+.hero-estudiantes {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 46px;
+}
+
+.etiqueta {
+  display: inline-block;
+  background: #fff0f7;
+  color: #c45183;
+  padding: 9px 18px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.hero-estudiantes h1 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #c45183;
+  margin-bottom: 18px;
+}
+
+.hero-estudiantes p {
+  max-width: 760px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #5d586b;
+  font-size: 1.05rem;
+}
+
+.grid-estudiantes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.estudiante-card {
+  min-height: 330px;
+  padding: 32px;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 18px 38px rgba(77, 58, 105, 0.12);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  border: 3px solid transparent;
+}
+
+.estudiante-card:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: 0 26px 55px rgba(77, 58, 105, 0.18);
+}
+
+.icono {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  font-size: 2.1rem;
+  border-radius: 22px;
+  margin-bottom: 22px;
+  background: #f7f2ff;
+}
+
+.estudiante-card h2 {
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+  color: #302b3f;
+}
+
+.estudiante-card p {
+  color: #625d70;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.botones {
+  display: grid;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-card {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  padding: 13px 16px;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);
+}
+
+.btn-card:hover {
+  transform: scale(1.04);
+  filter: brightness(1.05);
+}
+
+.card-guia {
+  background: linear-gradient(180deg, #fff4fa, #ffffff);
+  border-color: #f5a3c7;
+}
+
+.card-guia .icono,
+.card-guia .btn-card {
+  background: linear-gradient(135deg, #c45183, #e77fad);
+}
+
+.card-inclusiva {
+  background: linear-gradient(180deg, #f0fff9, #ffffff);
+  border-color: #8ee6c1;
+}
+
+.card-inclusiva .icono,
+.card-inclusiva .btn-card {
+  background: linear-gradient(135deg, #1f9f86, #58d6b4);
+}
+
+.card-actividades {
+  background: linear-gradient(180deg, #fff9e9, #ffffff);
+  border-color: #ffd166;
+}
+
+.card-actividades .icono,
+.card-actividades .btn-card {
+  background: linear-gradient(135deg, #f4a300, #ffc857);
+}
+
+.card-juegos {
+  background: linear-gradient(180deg, #eff9ff, #ffffff);
+  border-color: #7bdff2;
+}
+
+.card-juegos .icono,
+.card-juegos .btn-card {
+  background: linear-gradient(135deg, #2b9ed8, #7bdff2);
+}
+
+.card-evaluacion {
+  background: linear-gradient(180deg, #f7f2ff, #ffffff);
+  border-color: #b89cff;
+}
+
+.card-evaluacion .icono {
+  background: linear-gradient(135deg, #7b61ff, #b89cff);
+}
+
+.estado-proximo {
+  display: inline-block;
+  margin-top: 12px;
+  background: #eee7ff;
+  color: #6b50d8;
+  font-weight: 900;
+  padding: 12px 18px;
+  border-radius: 999px;
+}
+
+@media (max-width: 980px) {
+  .zona-estudiantes {
+    padding: 42px 26px;
+  }
+
+  .grid-estudiantes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    padding: 18px;
+  }
+
+  .btn-volver {
+    position: static;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .zona-estudiantes {
+    margin: 0 auto;
+    padding: 34px 20px;
+    border-radius: 26px;
+  }
+
+  .grid-estudiantes {
+    grid-template-columns: 1fr;
+  }
+
+  .estudiante-card {
+    min-height: auto;
+  }
+
+  .hero-estudiantes h1 {
+    letter-spacing: 1px;
+  }
+}
