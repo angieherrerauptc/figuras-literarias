@@ -6,132 +6,276 @@
     <title>Fábrica de Figuras Literarias</title>
 
     <link rel="stylesheet" href="css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header class="hero">
+<header class="hero" id="inicio">
+
     <nav class="navbar">
-        <a href="index.html" class="logo">Selecciona tu perfil</a>
+        <a href="#inicio" class="logo">Fábrica de Figuras Literarias</a>
 
         <div class="menu">
-            <a href="docentes.html">Docentes</a>
-            <a href="estudiantes.html">Estudiantes</a>
-            <a href="neurodivergente.html"> Estudiantes Neurodivergentes</a>
+            <a href="#objetivos">Objetivos</a>
+            <a href="#secuencia">Secuencia</a>
+            <a href="#gamificacion">Gamificación</a>
+            <a href="#evaluacion">Evaluación</a>
         </div>
     </nav>
 
     <section class="hero-content">
+
         <div class="hero-text">
             <span class="hero-label">Plataforma educativa inclusiva</span>
 
-            <h1>La Fábrica de Figuras Literarias</h1>
+            <h1>Aprende figuras literarias de forma clara, visual e interactiva</h1>
 
             <p>
-                Aprende figuras literarias de forma visual, creativa e interactiva.
-                Un espacio pensado para docentes, estudiantes y estudiantes neurodivergentes.
+                Un recurso digital diseñado para apoyar el aprendizaje de docentes,
+                estudiantes y estudiantes neurodivergentes mediante contenidos visuales,
+                actividades interactivas y evaluación formativa.
             </p>
 
             <div class="hero-buttons">
-                <a href="#perfiles" class="primary-btn">Explorar perfiles</a>
-                <a href="#beneficios" class="secondary-btn">Ver beneficios</a>
+                <a href="#objetivos" class="primary-btn">Ver objetivos</a>
+                <a href="#perfiles" class="secondary-btn">Explorar perfiles</a>
             </div>
         </div>
 
-    <div class="hero-carousel">
-        <div class="carousel-track">
-            <img src="img/carrusel/1.jpg" alt="Qué son las figuras literarias">
-            <img src="img/carrusel/2.jpg" alt="Comparación">
-            <img src="img/carrusel/3.jpg" alt="Metáfora">
-            <img src="img/carrusel/4.jpg" alt="Sinestesia">
-            <img src="img/carrusel/5.jpg" alt="Personificación">
-            <img src="img/carrusel/6.jpg" alt="Hipérbole">
-    </div>
+        <div class="hero-carousel">
+            <div class="carousel-track">
+                <img src="img/carrusel/1.jpg" alt="Qué son las figuras literarias">
+                <img src="img/carrusel/2.jpg" alt="Comparación">
+                <img src="img/carrusel/3.jpg" alt="Metáfora">
+                <img src="img/carrusel/4.jpg" alt="Sinestesia">
+                <img src="img/carrusel/5.jpg" alt="Personificación">
+                <img src="img/carrusel/6.jpg" alt="Hipérbole">
+            </div>
+        </div>
 
-</div>
     </section>
+
 </header>
 
 <main>
-    <section class="about-section">
-        <div class="section-title">
-            <span>¿Qué es?</span>
-            <h2>Un espacio para aprender literatura de manera diferente</h2>
+
+    <section id="objetivos" class="intro-section">
+        <div class="section-header">
+            <span>Introducción y objetivos</span>
+            <h2>Propósito de aprendizaje</h2>
         </div>
 
-        <p class="about-text">
-            La Fábrica de Figuras Literarias reúne recursos educativos, actividades descargables
-            y herramientas visuales para apoyar el aprendizaje de las figuras literarias en el aula
-            y en casa.
-        </p>
+        <div class="intro-grid">
+
+            <article class="intro-card main-objective">
+                <h3>Objetivo general</h3>
+                <p>
+                    Reconocer, comprender y aplicar figuras literarias como recursos
+                    expresivos que enriquecen la interpretación y producción de textos.
+                </p>
+            </article>
+
+            <article class="intro-card">
+                <h3>Comprender</h3>
+                <p>
+                    Identificar el significado y función de diferentes figuras literarias
+                    dentro de textos poéticos y narrativos.
+                </p>
+            </article>
+
+            <article class="intro-card">
+                <h3>Aplicar</h3>
+                <p>
+                    Utilizar figuras literarias en ejemplos propios para fortalecer la
+                    creatividad y la expresión escrita.
+                </p>
+            </article>
+
+            <article class="intro-card">
+                <h3>Participar</h3>
+                <p>
+                    Desarrollar actividades interactivas que favorezcan la motivación,
+                    la inclusión y el aprendizaje significativo.
+                </p>
+            </article>
+
+        </div>
     </section>
 
     <section id="perfiles" class="audience-section">
-        <div class="section-title">
+        <div class="section-header">
             <span>Explora por perfil</span>
             <h2>Elige la zona que necesitas</h2>
         </div>
 
         <div class="audience-cards">
+
             <article class="audience-card">
-                <!--<div class="card-icon">👩‍🏫</div>-->
                 <h3>Docentes</h3>
-                <p>Guías, actividades, estrategias inclusivas y recursos listos para usar en clase.</p>
+                <p>Guías, estrategias inclusivas y recursos listos para utilizar en clase.</p>
                 <a href="docentes.html">Entrar</a>
             </article>
 
             <article class="audience-card">
-                <!--<div class="card-icon">🎒</div>-->
                 <h3>Estudiantes</h3>
-                <p>Material de apoyo, juegos interactivos y ejercicios para aprender practicando.</p>
+                <p>Material de apoyo, juegos interactivos y ejercicios para practicar.</p>
                 <a href="estudiantes.html">Entrar</a>
             </article>
 
             <article class="audience-card">
-                <!--<div class="card-icon">🧩</div>-->
-                <h3>Estudiantes neurodivergentes </h3>
-                <p>Recursos visuales, actividades tranquilas y materiales pensados para un aprendizaje accesible.</p>
+                <h3>Estudiantes neurodivergentes</h3>
+                <p>Recursos visuales, actividades tranquilas y materiales accesibles.</p>
                 <a href="neurodivergente.html">Entrar</a>
             </article>
+
+        </div>
+    </section>
+
+    <section id="secuencia" class="sequence-section">
+        <div class="section-header">
+            <span>Secuencia didáctica</span>
+            <h2>Conceptos principales</h2>
+        </div>
+
+        <div class="concept-grid">
+
+            <article class="concept-card">
+                <span class="concept-number">01</span>
+                <h3>Metáfora</h3>
+                <p>
+                    Relaciona dos elementos sin usar conectores comparativos.
+                    Permite expresar ideas de manera más poética y profunda.
+                </p>
+            </article>
+
+            <article class="concept-card">
+                <span class="concept-number">02</span>
+                <h3>Símil</h3>
+                <p>
+                    Compara dos elementos utilizando palabras como “como”,
+                    “parece” o “semejante a”.
+                </p>
+            </article>
+
+            <article class="concept-card">
+                <span class="concept-number">03</span>
+                <h3>Personificación</h3>
+                <p>
+                    Atribuye características humanas a animales, objetos o ideas.
+                </p>
+            </article>
+
+            <article class="concept-card">
+                <span class="concept-number">04</span>
+                <h3>Hipérbole</h3>
+                <p>
+                    Exagera una idea o situación para generar énfasis,
+                    emoción o impacto expresivo.
+                </p>
+            </article>
+
+            <article class="concept-card">
+                <span class="concept-number">05</span>
+                <h3>Sinestesia</h3>
+                <p>
+                    Combina sensaciones de distintos sentidos, como colores,
+                    sonidos, sabores o texturas.
+                </p>
+            </article>
+
+            <article class="concept-card">
+                <span class="concept-number">06</span>
+                <h3>Comparación</h3>
+                <p>
+                    Establece semejanzas entre elementos para facilitar
+                    la comprensión de una imagen literaria.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="gamificacion" class="game-section">
+        <div class="section-header">
+            <span>Gamificación</span>
+            <h2>Actividad interactiva con acceso QR</h2>
+        </div>
+
+        <div class="game-card">
+
+            <div class="game-content">
+                <h3>Practica jugando</h3>
+                <p>
+                    Ingresa a la actividad interactiva para reforzar los conceptos
+                    aprendidos sobre figuras literarias. Puedes acceder desde el
+                    botón o escaneando el código QR.
+                </p>
+
+                <div class="game-actions">
+                    <a href="https://wordwall.net/es-cl/community/juegos-de-figuras-literarias" target="_blank" class="primary-btn">
+                        Ir a la actividad
+                    </a>
+
+                    <a href="#evaluacion" class="secondary-outline">
+                        Continuar a evaluación
+                    </a>
+                </div>
+            </div>
+
+            <div class="qr-box">
+                <div class="qr-placeholder">
+                    QR
+                </div>
+                <p>Coloca aquí la imagen del código QR</p>
+            </div>
+
         </div>
     </section>
 
     <section id="beneficios" class="benefits-section">
-        <div class="section-title">
+        <div class="section-header">
             <span>Beneficios</span>
-            <h2>Aprender puede ser más claro, visual y divertido</h2>
+            <h2>Una experiencia clara, inclusiva y accesible</h2>
         </div>
 
         <div class="benefits-grid">
-            <div class="benefit-item">
-                <strong>Aprendizaje visual</strong>
-                <p>Diseño claro, colores suaves y recursos fáciles de comprender.</p>
-            </div>
 
-            <div class="benefit-item">
-                <strong>Recursos descargables</strong>
-                <p>Materiales para imprimir, compartir o usar en clase.</p>
-            </div>
+            <article class="benefit-item">
+                <h3>Aprendizaje visual</h3>
+                <p>Recursos gráficos que facilitan la comprensión de los conceptos.</p>
+            </article>
 
-            <div class="benefit-item">
-                <strong>Actividades interactivas</strong>
-                <p>Enlaces a juegos y ejercicios para reforzar contenidos.</p>
-            </div>
+            <article class="benefit-item">
+                <h3>Recursos descargables</h3>
+                <p>Materiales educativos para consultar, imprimir o compartir.</p>
+            </article>
 
-            <div class="benefit-item">
-                <strong>Educación inclusiva</strong>
-                <p>Contenido pensado para diferentes formas de aprender.</p>
-            </div>
+            <article class="benefit-item">
+                <h3>Actividades interactivas</h3>
+                <p>Dinámicas digitales que fortalecen la participación.</p>
+            </article>
+
+            <article class="benefit-item">
+                <h3>Educación inclusiva</h3>
+                <p>Contenido pensado para diferentes ritmos y formas de aprendizaje.</p>
+            </article>
+
         </div>
     </section>
 
-    <section class="cta-section">
-        <h2>Comienza a explorar la plataforma</h2>
-        <p>Selecciona una zona y descubre materiales diseñados para aprender figuras literarias.</p>
-        <a href="#perfiles">Explorar perfiles</a>
+    <section id="evaluacion" class="evaluation-section">
+        <div class="evaluation-content">
+            <span>Evaluación</span>
+            <h2>Demuestra lo aprendido</h2>
+            <p>
+                Finaliza el recorrido realizando una actividad de evaluación
+                para comprobar tu comprensión de las figuras literarias.
+            </p>
+
+            <a href="#" class="evaluation-btn">Realizar evaluación</a>
+        </div>
     </section>
 
 </main>
@@ -141,78 +285,46 @@
     <div class="footer-container">
 
         <div class="footer-column footer-main">
-
             <h3>FÁBRICA DE FIGURAS LITERARIAS</h3>
-
             <p>
-                Plataforma educativa inclusiva diseñada para apoyar
-                el aprendizaje de figuras literarias mediante recursos,
-                actividades y materiales accesibles para todos.
+                Plataforma educativa inclusiva diseñada para apoyar el aprendizaje
+                de figuras literarias mediante recursos, actividades y materiales accesibles.
             </p>
-
         </div>
 
         <div class="footer-column">
-
             <h4>PROYECTO ACADÉMICO</h4>
-
             <p>Asignatura: Elaboración de recursos para la lengua castellana</p>
-
             <p>Profesora: Marlen Rativa</p>
-
-            <p>Año: 2025</p>
-
+            <p>Año: 2026</p>
         </div>
 
         <div class="footer-column">
-
             <h4>AUTORÍA</h4>
-
             <p class="footer-label">Creado por</p>
-
-            <p class="authors">
-                Angie Herrera & Juan Cristancho
-            </p>
-
+            <p class="authors">Angie Herrera & Juan Cristancho</p>
             <p>
-                
                 Proyecto universitario enfocado en la inclusión,
                 el aprendizaje significativo y la innovación educativa.
             </p>
-
         </div>
 
         <div class="footer-column">
-
             <h4>SECCIONES</h4>
-
-            <a href="docentes.html">Docentes</a>
-
-            <a href="estudiantes.html">Estudiantes</a>
-
-            <a href="neurodivergente.html">
-                Estudiantes Neurodivergentes
-            </a>
-
+            <a href="#objetivos">Objetivos</a>
+            <a href="#secuencia">Secuencia didáctica</a>
+            <a href="#gamificacion">Gamificación</a>
+            <a href="#evaluacion">Evaluación</a>
         </div>
 
     </div>
 
     <div class="footer-bottom">
-
-        <p>
-            © 2026 Fábrica de Figuras Literarias
-        </p>
-
-        <p>
-            "Cada estudiante aprende de manera diferente, y cada forma de aprender merece ser valorada."
-        </p>
-
+        <p>© 2026 Fábrica de Figuras Literarias</p>
+        <p>“Cada forma de aprender merece ser valorada.”</p>
     </div>
 
 </footer>
-
-
 
 <script src="js/index.js"></script>
 </body>
