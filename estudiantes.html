@@ -15,7 +15,7 @@
 
 <body>
 
-  <audio id="musicaFondo" src="musica-fondo.mp3" loop></audio>
+  <audio id="musicaFondo" src="musica-estudiantes.mp3" loop></audio>
 
   <button class="btn-musica" id="btnMusica" type="button" aria-label="Activar música">
     <i class="fa-solid fa-volume-high"></i>
@@ -177,24 +177,36 @@
   </footer>
 
   <script>
-    const musica = document.getElementById("musicaFondo");
-    const btnMusica = document.getElementById("btnMusica");
 
-    let reproduciendo = false;
+const musica = document.getElementById("musicaFondo");
+const btnMusica = document.getElementById("btnMusica");
 
-    btnMusica.addEventListener("click", () => {
-      if (!reproduciendo) {
-        musica.play();
-        btnMusica.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
-        btnMusica.setAttribute("aria-label", "Pausar música");
-        reproduciendo = true;
-      } else {
-        musica.pause();
-        btnMusica.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
-        btnMusica.setAttribute("aria-label", "Activar música");
-        reproduciendo = false;
-      }
-    });
+musica.volume = 0.25;
+
+let reproduciendo = false;
+
+btnMusica.addEventListener("click", () => {
+
+  if (!reproduciendo) {
+
+    musica.play();
+
+    btnMusica.innerHTML =
+      '<i class="fa-solid fa-volume-xmark"></i>';
+
+    reproduciendo = true;
+
+  } else {
+
+    musica.pause();
+
+    btnMusica.innerHTML =
+      '<i class="fa-solid fa-volume-high"></i>';
+
+    reproduciendo = false;
+  }
+
+});
   </script>
 
 </body>
