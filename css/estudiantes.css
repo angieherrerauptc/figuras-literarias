@@ -40,7 +40,7 @@ body {
     radial-gradient(circle at 90% 18%, #9ef2ff 0 9%, transparent 10%),
     radial-gradient(circle at 12% 82%, #ffc1df 0 10%, transparent 11%),
     linear-gradient(135deg, #fff5fb, #f2efff 55%, #ecfbff);
-  cursor: url("../img/cursor-lapiz.png"), auto;
+  cursor: url("../img/cursor/sword.png"), auto;
 }
 
 body::before {
