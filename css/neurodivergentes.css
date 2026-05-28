@@ -528,3 +528,11 @@ body {
     padding: 40px 6% 30px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+.isla,
+.evaluacion {
+  scroll-margin-top: 40px;
+}
