@@ -1,2 +1,2 @@
-btnMusica.classList.add("playing");
 btnMusica.classList.remove("playing");
+btnMusica.classList.add("playing");
