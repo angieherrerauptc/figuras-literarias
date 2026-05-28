@@ -113,7 +113,15 @@
 
         <div class="estado-proximo">Próximamente</div>
       </article>
+      <article class="estudiante-card card-foto">
+        <div class="foto-decorativa">
+            <img src="img/profe.jpg" alt="Figura decorativa de la profesora">
+        </div>
+        <h2>Nuestra inspiración</h2>
+        <p>Una presencia especial que acompaña esta aventura literaria.</p>
+      </article>
 
+      
     </section>
   </main>
 
@@ -175,39 +183,39 @@
       <p>“Cada estudiante aprende a su ritmo.”</p>
     </div>
   </footer>
+<script>
+  const musica = document.getElementById("musicaFondo");
+  const btnMusica = document.getElementById("btnMusica");
 
-  <script>
+  musica.volume = 0.86;
 
-const musica = document.getElementById("musicaFondo");
-const btnMusica = document.getElementById("btnMusica");
+  let reproduciendo = false;
 
-musica.volume = 0.90;
+  btnMusica.addEventListener("click", async () => {
+    try {
+      if (!reproduciendo) {
+        await musica.play();
 
-let reproduciendo = false;
+        btnMusica.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
+        btnMusica.classList.add("playing");
+        btnMusica.setAttribute("aria-label", "Pausar música");
 
-btnMusica.addEventListener("click", () => {
+        reproduciendo = true;
+      } else {
+        musica.pause();
 
-  if (!reproduciendo) {
+        btnMusica.innerHTML = '<i class="fa-solid fa-volume-xmark"></i>';
+        btnMusica.classList.remove("playing");
+        btnMusica.setAttribute("aria-label", "Activar música");
 
-    musica.play();
-
-    btnMusica.innerHTML =
-      '<i class="fa-solid fa-volume-xmark"></i>';
-
-    reproduciendo = true;
-
-  } else {
-
-    musica.pause();
-
-    btnMusica.innerHTML =
-      '<i class="fa-solid fa-volume-high"></i>';
-
-    reproduciendo = false;
-  }
-
-});
-  </script>
+        reproduciendo = false;
+      }
+    } catch (error) {
+      console.log("El navegador bloqueó la reproducción hasta que el usuario interactúe.");
+    }
+  });
+</script>
+ 
 
 </body>
 </html>
