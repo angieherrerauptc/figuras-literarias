@@ -1,0 +1,433 @@
+:root {
+  --fondo: #fdfbf7;
+  --crema: #fff7e8;
+  --menta: #e4f1e7;
+  --lavanda: #e8e6f8;
+  --azul-suave: #dce8f6;
+  --rosa-suave: #f6e4e8;
+  --verde: #6f8f72;
+  --azul: #6f86b8;
+  --texto: #2f3744;
+  --texto-suave: #657080;
+  --blanco: #ffffff;
+  --borde: rgba(80, 90, 110, 0.12);
+  --sombra: 0 18px 45px rgba(65, 75, 95, 0.10);
+  --sombra-suave: 0 10px 25px rgba(65, 75, 95, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background:
+    radial-gradient(circle at 10% 10%, #edf6ed 0 120px, transparent 121px),
+    radial-gradient(circle at 90% 18%, #eeeafa 0 160px, transparent 161px),
+    radial-gradient(circle at 15% 80%, #f8e9df 0 180px, transparent 181px),
+    var(--fondo);
+  color: var(--texto);
+  line-height: 1.7;
+  letter-spacing: 0.2px;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 88vh;
+  padding: 90px 8% 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__contenido {
+  position: relative;
+  z-index: 2;
+  max-width: 980px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--borde);
+  border-radius: 42px;
+  padding: 58px;
+  box-shadow: var(--sombra);
+  backdrop-filter: blur(8px);
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--menta);
+  color: #49644d;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+
+.hero h1 {
+  margin-top: 22px;
+  font-size: clamp(2.3rem, 5vw, 4.8rem);
+  line-height: 1.1;
+  color: var(--texto);
+}
+
+.hero p {
+  max-width: 780px;
+  margin: 24px auto 0;
+  font-size: 1.1rem;
+  color: var(--texto-suave);
+}
+
+.objetivos {
+  margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.objetivos div {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  padding: 13px 18px;
+  border-radius: 18px;
+  font-size: 0.95rem;
+  box-shadow: var(--sombra-suave);
+}
+
+.hero__decoracion {
+  position: absolute;
+  border-radius: 999px;
+  opacity: 0.7;
+}
+
+.hero__decoracion--uno {
+  width: 320px;
+  height: 320px;
+  background: var(--menta);
+  left: -80px;
+  top: 90px;
+}
+
+.hero__decoracion--dos {
+  width: 260px;
+  height: 260px;
+  background: var(--lavanda);
+  right: -70px;
+  bottom: 40px;
+}
+
+/* RUTA */
+
+.ruta {
+  position: relative;
+  width: min(1180px, 92%);
+  margin: 0 auto;
+  padding: 50px 0 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.linea-ruta {
+  position: absolute;
+  top: 90px;
+  bottom: 120px;
+  left: 50%;
+  width: 4px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #c8d8c8,
+    #d7d2ef,
+    #d7e4f4,
+    transparent
+  );
+  border-radius: 999px;
+  opacity: 0.65;
+}
+
+.isla {
+  position: relative;
+  z-index: 2;
+  width: min(500px, 100%);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--borde);
+  border-radius: 38px;
+  padding: 34px;
+  box-shadow: var(--sombra);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.isla:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 50px rgba(65, 75, 95, 0.12);
+}
+
+.isla--uno,
+.isla--tres,
+.isla--cinco {
+  align-self: flex-start;
+}
+
+.isla--dos,
+.isla--cuatro {
+  align-self: flex-end;
+}
+
+.isla--grande {
+  width: min(640px, 100%);
+}
+
+.isla--juego {
+  width: min(760px, 100%);
+}
+
+.isla--uno {
+  background: linear-gradient(145deg, #ffffff, var(--menta));
+}
+
+.isla--dos {
+  background: linear-gradient(145deg, #ffffff, var(--lavanda));
+}
+
+.isla--tres {
+  background: linear-gradient(145deg, #ffffff, var(--azul-suave));
+}
+
+.isla--cuatro {
+  background: linear-gradient(145deg, #ffffff, var(--crema));
+}
+
+.isla--cinco {
+  background: linear-gradient(145deg, #ffffff, var(--rosa-suave));
+}
+
+.isla__numero {
+  position: absolute;
+  top: 22px;
+  right: 28px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(47, 55, 68, 0.35);
+}
+
+.isla__icono {
+  width: 76px;
+  height: 76px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--borde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+.isla__icono svg {
+  width: 42px;
+  height: 42px;
+  fill: var(--azul);
+}
+
+.isla h2 {
+  font-size: 1.65rem;
+  margin-bottom: 12px;
+}
+
+.isla p {
+  color: var(--texto-suave);
+  font-size: 1rem;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  margin-top: 22px;
+  padding: 13px 22px;
+  background: #7188bd;
+  color: white;
+  border-radius: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.96rem;
+  box-shadow: 0 8px 18px rgba(113, 136, 189, 0.22);
+  transition: transform 0.45s ease, opacity 0.45s ease, background 0.45s ease;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+  background: #637aaa;
+}
+
+.boton:focus-visible {
+  outline: 4px solid rgba(113, 136, 189, 0.28);
+  outline-offset: 4px;
+}
+
+/* JUEGO Y QR */
+
+.juego__contenido {
+  display: grid;
+  grid-template-columns: 1fr 190px;
+  gap: 28px;
+  align-items: center;
+}
+
+.qr {
+  text-align: center;
+}
+
+.qr__marco {
+  width: 165px;
+  height: 165px;
+  margin: 0 auto;
+  background: var(--blanco);
+  border-radius: 28px;
+  border: 1px solid var(--borde);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--sombra-suave);
+}
+
+.qr__marco img {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+}
+
+.qr span {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.88rem;
+  color: var(--texto-suave);
+}
+
+/* EVALUACIÓN */
+
+.evaluacion {
+  width: min(1050px, 92%);
+  margin: 0 auto 90px;
+}
+
+.evaluacion__card {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  background: linear-gradient(145deg, #ffffff, #edf3ee);
+  border: 1px solid var(--borde);
+  border-radius: 42px;
+  padding: 54px 34px;
+  box-shadow: var(--sombra);
+}
+
+.evaluacion__card h2 {
+  margin-top: 18px;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.evaluacion__card p {
+  max-width: 700px;
+  margin: 18px auto 0;
+  color: var(--texto-suave);
+}
+
+.boton--evaluacion {
+  background: var(--verde);
+  box-shadow: 0 8px 18px rgba(111, 143, 114, 0.25);
+}
+
+.boton--evaluacion:hover {
+  background: #5f7f62;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: auto;
+    padding: 55px 5% 40px;
+  }
+
+  .hero__contenido {
+    padding: 34px 22px;
+    border-radius: 30px;
+  }
+
+  .objetivos {
+    flex-direction: column;
+  }
+
+  .ruta {
+    gap: 32px;
+    padding-top: 35px;
+  }
+
+  .linea-ruta {
+    left: 22px;
+  }
+
+  .isla,
+  .isla--uno,
+  .isla--dos,
+  .isla--tres,
+  .isla--cuatro,
+  .isla--cinco {
+    align-self: stretch;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .juego__contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .qr__marco {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 520px) {
+  .isla {
+    padding: 28px 22px;
+    border-radius: 30px;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+
+  .boton {
+    width: 100%;
+  }
+
+  .isla__icono {
+    width: 68px;
+    height: 68px;
+  }
+
+  .isla__icono svg {
+    width: 38px;
+    height: 38px;
+  }
+}
