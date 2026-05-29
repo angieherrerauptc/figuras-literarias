@@ -102,7 +102,6 @@
           <a href="https://www.orientacionandujar.es/wp-content/uploads/2020/11/Cuaderno-de-actividades-alumnado-TEA-VOL-2.pdf" class="btn-card">Cuaderno TEA</a>
         </div>
       </article>
-
       <article class="estudiante-card card-evaluacion">
         <div class="icono">
           <i class="fa-solid fa-trophy"></i>
@@ -117,6 +116,9 @@
         >
         Evaluación
       </a>
+      <button class="btn-rubrica" id="abrirRubrica">
+        Ver interpretación de resultados
+      </button>
       </article>
       <article class="estudiante-card card-foto">
         <div class="foto-decorativa">
@@ -126,7 +128,6 @@
         <p>Una presencia especial que acompaña esta aventura literaria.</p>
       </article>
 
-      
     </section>
   </main>
 
@@ -221,7 +222,63 @@
     }
   });
 </script>
- 
+
+      <div class="modal-rubrica" id="modalRubrica">
+        <div class="modal-contenido">
+          <button class="cerrar-rubrica" id="cerrarRubrica">×</button>
+          
+          <h3>¿Cómo interpretar mi resultado?</h3>
+
+      <div class="nivel-card nivel-bajo">
+        <span>0 – 2 aciertos</span>
+        <strong>Bajo</strong>
+        <p>Reconoces muy pocas figuras literarias. Necesitas apoyo para identificar ejemplos básicos.</p>
+      </div>
+
+      <div class="nivel-card nivel-basico">
+        <span>3 – 4 aciertos</span>
+        <strong>Básico</strong>
+        <p>Identificas algunas figuras literarias simples, aunque todavía presentas confusiones frecuentes.</p>
+      </div>
+
+      <div class="nivel-card nivel-intermedio">
+        <span>5 – 6 aciertos</span>
+        <strong>Intermedio</strong>
+        <p>Reconoces varias figuras literarias comunes y comprendes ejemplos sencillos.</p>
+      </div>
+
+      <div class="nivel-card nivel-alto">
+        <span>7 – 8 aciertos</span>
+        <strong>Alto</strong>
+        <p>Identificas correctamente la mayoría de las figuras literarias y explicas su función.</p>
+      </div>
+
+      <div class="nivel-card nivel-superior">
+        <span>9 – 10 aciertos</span>
+        <strong>Superior</strong>
+        <p>Dominas las principales figuras literarias y puedes analizarlas en diferentes contextos.</p>
+      </div>
+    </div>
+  </div>
+<script>
+  const abrirRubrica = document.getElementById("abrirRubrica");
+  const cerrarRubrica = document.getElementById("cerrarRubrica");
+  const modalRubrica = document.getElementById("modalRubrica");
+
+  abrirRubrica.addEventListener("click", () => {
+    modalRubrica.classList.add("activo");
+  });
+
+  cerrarRubrica.addEventListener("click", () => {
+    modalRubrica.classList.remove("activo");
+  });
+
+  modalRubrica.addEventListener("click", (e) => {
+    if (e.target === modalRubrica) {
+      modalRubrica.classList.remove("activo");
+    }
+  });
+</script>
 
 </body>
 </html>
