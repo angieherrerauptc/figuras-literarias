@@ -911,3 +911,60 @@ html {
     font-size: 2.25rem !important;
   }
 }
+/* RÚBRICA MODAL - ESTUDIANTES NEURODIVERGENTES */
+.btn-rubrica-neuro{
+  display: inline-block;
+  margin-top: 18px;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: #eef3ee;
+  color: #35513d;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.modal-rubrica-neuro{
+  display: none !important;
+  position: fixed;
+  inset: 0;
+  background: rgba(30,30,30,.45);
+  z-index: 99999;
+  padding: 24px;
+}
+
+.modal-rubrica-neuro.activo{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido-neuro{
+  position: relative;
+  width: min(620px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #fffdf8;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.cerrar-rubrica-neuro{
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.nivel-neuro{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f7f4ec;
+  border-left: 6px solid #9caf88;
+}
