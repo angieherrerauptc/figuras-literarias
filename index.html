@@ -47,6 +47,9 @@
                 class="pretest-btn">
                 Evaluación previa
                 </a>
+                <button class="btn-rubrica-inicio" id="abrirRubricaInicio" type="button">
+                    Ver interpretación de resultados
+                </button>
             </div>
         </div>
 
@@ -313,6 +316,9 @@
             </p>
 
             <a href="https://forms.gle/qQuU1Zr4fw5CWn9L8" class="evaluation-btn">Realizar evaluación</a>
+            <button class="btn-rubrica-final" id="abrirRubricaFinal" type="button">
+                    Ver interpretación de resultados
+                </button>
         </div>
     </section>
 
@@ -372,7 +378,118 @@
 </footer>
 
 <script src="js/index.js"></script>
+<div class="modal-rubrica-inicio" id="modalRubricaInicio">
 
+  <div class="modal-contenido-inicio">
 
+    <button class="cerrar-rubrica-inicio" id="cerrarRubricaInicio">
+      ×
+    </button>
+
+    <h2>Interpretación de resultados</h2>
+
+    <p class="intro-rubrica-inicio">
+      Esta evaluación permite identificar tus conocimientos previos sobre las figuras literarias antes de iniciar el recorrido.
+    </p>
+
+    <div class="nivel-inicio">
+      <strong>0 – 2 aciertos</strong>
+      <p>Conocimiento inicial. Es recomendable explorar los contenidos desde el comienzo.</p>
+    </div>
+
+    <div class="nivel-inicio">
+      <strong>3 – 4 aciertos</strong>
+      <p>Reconoces algunos conceptos básicos, aunque todavía existen dificultades de identificación.</p>
+    </div>
+
+    <div class="nivel-inicio">
+      <strong>5 – 6 aciertos</strong>
+      <p>Comprendes varias figuras literarias comunes y puedes reconocer ejemplos sencillos.</p>
+    </div>
+
+    <div class="nivel-inicio">
+      <strong>7 – 8 aciertos</strong>
+      <p>Posees una comprensión sólida de la mayoría de las figuras literarias trabajadas.</p>
+    </div>
+
+    <div class="nivel-inicio">
+      <strong>9 – 10 aciertos</strong>
+      <p>Demuestras dominio avanzado y capacidad para interpretar figuras literarias en diferentes contextos.</p>
+    </div>
+
+  </div>
+
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const abrir = document.querySelector("#abrirRubricaInicio");
+    const cerrar = document.querySelector("#cerrarRubricaInicio");
+    const modal = document.querySelector("#modalRubricaInicio");
+
+    if (abrir && modal) {
+      abrir.onclick = function () {
+        modal.classList.add("activo");
+      };
+    }
+
+    if (cerrar && modal) {
+      cerrar.onclick = function () {
+        modal.classList.remove("activo");
+      };
+    }
+
+    if (modal) {
+      modal.onclick = function (e) {
+        if (e.target === modal) {
+          modal.classList.remove("activo");
+        }
+      };
+    }
+  });
+</script>
+<div class="modal-rubrica-final" id="modalRubricaFinal">
+  <div class="modal-contenido-final">
+    <button class="cerrar-rubrica-final" id="cerrarRubricaFinal" type="button">×</button>
+
+    <h2>Interpretación de resultados</h2>
+
+    <p class="intro-rubrica-final">
+      Esta rúbrica te ayuda a comprender tu nivel después de realizar la evaluación final.
+    </p>
+
+    <div class="nivel-final"><strong>0 – 2 aciertos | Bajo</strong><p>Necesitas reforzar los contenidos básicos sobre figuras literarias.</p></div>
+    <div class="nivel-final"><strong>3 – 4 aciertos | Básico</strong><p>Reconoces algunas figuras literarias, pero aún hay confusiones.</p></div>
+    <div class="nivel-final"><strong>5 – 6 aciertos | Intermedio</strong><p>Comprendes varias figuras literarias y reconoces ejemplos sencillos.</p></div>
+    <div class="nivel-final"><strong>7 – 8 aciertos | Alto</strong><p>Identificas la mayoría de figuras literarias y explicas su función.</p></div>
+    <div class="nivel-final"><strong>9 – 10 aciertos | Superior</strong><p>Dominas las figuras literarias y puedes analizarlas en diferentes textos.</p></div>
+  </div>
+</div>
+<script>
+  window.addEventListener("load", function () {
+    const abrir = document.querySelector("#abrirRubricaFinal");
+    const cerrar = document.querySelector("#cerrarRubricaFinal");
+    const modal = document.querySelector("#modalRubricaFinal");
+
+    if (abrir && modal) {
+      abrir.onclick = function () {
+        modal.classList.add("activo");
+      };
+    }
+
+    if (cerrar && modal) {
+      cerrar.onclick = function () {
+        modal.classList.remove("activo");
+      };
+    }
+
+    if (modal) {
+      modal.onclick = function (e) {
+        if (e.target === modal) {
+          modal.classList.remove("activo");
+        }
+      };
+    }
+  });
+</script>
 </body>
 </html>
