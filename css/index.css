@@ -1112,3 +1112,128 @@ main {
     color: white;
     transform: translateY(-3px);
 }
+/* MODAL DE RESULTADOS - INICIO */
+.btn-rubrica-inicio{
+  display: inline-block;
+  margin-top: 14px;
+  border: none;
+  border-radius: 999px;
+  padding: 13px 22px;
+  background: #eef5f2;
+  color: #0f766e;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(0,0,0,.08);
+}
+
+.modal-rubrica-inicio{
+  display: none !important;
+  position: fixed;
+  inset: 0;
+  background: rgba(20,20,20,.45);
+  z-index: 99999;
+  padding: 24px;
+}
+
+.modal-rubrica-inicio.activo{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido-inicio{
+  position: relative;
+  width: min(650px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+}
+
+.cerrar-rubrica-inicio{
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  cursor: pointer;
+  color: #1f2937;
+}
+
+.nivel-inicio{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f8faf9;
+  border-left: 6px solid #0f766e;
+}
+
+.nivel-inicio strong{
+  display: block;
+  margin-bottom: 6px;
+  color: #0f766e;
+}
+.btn-rubrica-final{
+  display: inline-block;
+  margin-top: 14px;
+  border: 2px solid rgba(255,255,255,.7);
+  border-radius: 999px;
+  padding: 13px 24px;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.modal-rubrica-final{
+  display: none !important;
+  position: fixed;
+  inset: 0;
+  background: rgba(20,20,20,.45);
+  z-index: 99999;
+  padding: 24px;
+}
+
+.modal-rubrica-final.activo{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido-final{
+  position: relative;
+  width: min(650px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 34px;
+  box-shadow: 0 25px 60px rgba(0,0,0,.25);
+}
+
+.cerrar-rubrica-final{
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  border: none;
+  background: transparent;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.nivel-final{
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #f8faf9;
+  border-left: 6px solid #1f6f64;
+}
+
+.nivel-final strong{
+  display: block;
+  margin-bottom: 6px;
+  color: #1f6f64;
+}
