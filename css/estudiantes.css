@@ -637,3 +637,92 @@ body::after {
     color: white;
     transform: translateY(-3px);
 }
+/* RESULTADOS DE LA EVALUACIÓN */
+/* BOTÓN Y VENTANA DE RÚBRICA */
+
+.btn-rubrica{
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 1rem;
+  background: #ffffff;
+  color: #4a314d;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
+
+.modal-rubrica{
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.45);
+  z-index: 9999;
+  padding: 1.5rem;
+}
+
+.modal-rubrica.activo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido{
+  position: relative;
+  width: min(600px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,.25);
+}
+
+.modal-contenido h3{
+  text-align: center;
+  color: #4a314d;
+  margin-bottom: 1rem;
+}
+
+.cerrar-rubrica{
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #4a314d;
+}
+
+.nivel-card{
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background: #fafafa;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+}
+
+.nivel-card span{
+  display: block;
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.nivel-card strong{
+  display: block;
+  font-size: 1.1rem;
+  margin: .3rem 0;
+}
+
+.nivel-card p{
+  margin: 0;
+  line-height: 1.5;
+}
+
+.nivel-bajo{ border-left: 6px solid #d9534f; }
+.nivel-basico{ border-left: 6px solid #f0ad4e; }
+.nivel-intermedio{ border-left: 6px solid #f7d154; }
+.nivel-alto{ border-left: 6px solid #5cb85c; }
+.nivel-superior{ border-left: 6px solid #4b7bec; }
