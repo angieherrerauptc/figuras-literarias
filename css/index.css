@@ -1090,3 +1090,25 @@ main {
 
     padding: 18px;
 }
+.pretest-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px 24px;
+    border-radius: 999px;
+
+    background: var(--accent-soft);
+    color: var(--accent);
+
+    border: 1px solid rgba(45, 106, 103, 0.25);
+
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+.pretest-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-3px);
+}
