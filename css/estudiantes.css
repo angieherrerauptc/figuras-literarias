@@ -359,6 +359,13 @@ body::after {
   padding: 15px 24px;
   border-radius: 50px;
   box-shadow: 0 7px 0 var(--morado-oscuro);
+  text-decoration: none;
+  transition: all 0.22s ease;
+}
+
+.estado-proximo:hover {
+  transform: translateY(-5px) scale(1.03);
+  filter: brightness(1.06);
 }
 
 .footer-estudiantes {
@@ -607,4 +614,26 @@ body::after {
 
 .card-foto p {
   margin-bottom: 0;
+}
+.pretest-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px 24px;
+    border-radius: 999px;
+
+    background: var(--accent-soft);
+    color: var(--accent);
+
+    border: 1px solid rgba(45, 106, 103, 0.25);
+
+    font-weight: 800;
+    transition: 0.25s ease;
+}
+
+.pretest-btn:hover {
+    background: var(--accent);
+    color: white;
+    transform: translateY(-3px);
 }
