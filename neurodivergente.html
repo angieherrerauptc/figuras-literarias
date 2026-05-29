@@ -176,6 +176,9 @@
       </p>
       <a href="https://forms.gle/qQuU1Zr4fw5CWn9L8" class="boton boton--evaluacion">Realizar evaluación accesible</a>
     </div>
+    <button class="btn-rubrica-neuro" id="abrirRubricaNeuro" type="button">
+        Ver interpretación de resultados
+    </button>
   </section>
 
 <footer class="footer-neuro">
@@ -224,6 +227,68 @@
     <p>“Cada forma de aprender merece un camino claro, amable y accesible.”</p>
   </div>
 </footer>
+<div class="modal-rubrica-neuro" id="modalRubricaNeuro">
+  <div class="modal-contenido-neuro">
+    <button class="cerrar-rubrica-neuro" id="cerrarRubricaNeuro">×</button>
 
+    <h3>¿Cómo interpretar mi resultado?</h3>
+    <p class="intro-rubrica-neuro">
+      Revisa tu puntaje con calma. Cada nivel muestra cómo vas en el reconocimiento de figuras literarias.
+    </p>
+
+    <div class="nivel-neuro">
+      <span>0 – 2 aciertos</span>
+      <strong>Bajo</strong>
+      <p>Reconoces pocas figuras literarias. Puedes volver a mirar los ejemplos y practicar paso a paso.</p>
+    </div>
+
+    <div class="nivel-neuro">
+      <span>3 – 4 aciertos</span>
+      <strong>Básico</strong>
+      <p>Reconoces algunas figuras literarias, pero aún puedes confundirte con ciertos ejemplos.</p>
+    </div>
+
+    <div class="nivel-neuro">
+      <span>5 – 6 aciertos</span>
+      <strong>Intermedio</strong>
+      <p>Reconoces varias figuras literarias y comprendes ejemplos sencillos.</p>
+    </div>
+
+    <div class="nivel-neuro">
+      <span>7 – 8 aciertos</span>
+      <strong>Alto</strong>
+      <p>Identificas la mayoría de figuras literarias y entiendes para qué se usan.</p>
+    </div>
+
+    <div class="nivel-neuro">
+      <span>9 – 10 aciertos</span>
+      <strong>Superior</strong>
+      <p>Reconoces muy bien las figuras literarias y puedes analizarlas en diferentes textos.</p>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const abrir = document.getElementById("abrirRubricaNeuro");
+    const cerrar = document.getElementById("cerrarRubricaNeuro");
+    const modal = document.getElementById("modalRubricaNeuro");
+
+    if (!abrir || !cerrar || !modal) return;
+
+    abrir.addEventListener("click", () => {
+      modal.classList.add("activo");
+    });
+
+    cerrar.addEventListener("click", () => {
+      modal.classList.remove("activo");
+    });
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        modal.classList.remove("activo");
+      }
+    });
+  });
+</script>
 </body>
 </html>
